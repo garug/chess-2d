@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b70agbpcmdy7t"]
+
+[ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_2fx4n"]
+
+[node name="Horse" instance=ExtResource("1_2fx4n")]
+inner_label = 3

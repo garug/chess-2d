@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://fqd0ays2tlyi"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_5q171"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_5q171")
+
+[node name="ActivePiece" type="Label" parent="."]
+offset_left = 985.0
+offset_top = 18.0
+offset_right = 1128.0
+offset_bottom = 44.0
+text = "Active Piece: None"

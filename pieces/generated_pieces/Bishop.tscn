@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://7657cor64ush"]
+
+[ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_22soq"]
+
+[node name="Bishop" instance=ExtResource("1_22soq")]
+inner_label = 4

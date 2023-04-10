@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckmn4rndp625i"]
+
+[ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_bqm7j"]
+[ext_resource type="Script" path="res://scripts/Pawn.gd" id="2_3v7jn"]
+
+[node name="Pawn" instance=ExtResource("1_bqm7j")]
+script = ExtResource("2_3v7jn")

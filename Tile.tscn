@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhn7mcqv1s1rt"]
+
+[ext_resource type="Script" path="res://scripts/Tile.gd" id="1_3hjbu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2t2s7"]
+
+[node name="Tile" type="StaticBody2D"]
+collision_mask = 0
+input_pickable = true
+script = ExtResource("1_3hjbu")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2t2s7")
+debug_color = Color(0.611765, 0.470588, 0.694118, 0.419608)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

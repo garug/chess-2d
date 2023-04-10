@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0xnnqklp8ts7"]
+
+[ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_7b5xg"]
+
+[node name="King" instance=ExtResource("1_7b5xg")]
+inner_label = 0

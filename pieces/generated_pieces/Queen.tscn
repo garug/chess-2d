@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dll4kfcpfof44"]
+
+[ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_pv7po"]
+
+[node name="Queen" instance=ExtResource("1_pv7po")]
+inner_label = 5
