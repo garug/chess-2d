@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b70agbpcmdy7t"]
+[gd_scene load_steps=3 format=3 uid="uid://b70agbpcmdy7t"]
 
 [ext_resource type="PackedScene" uid="uid://bcq602vlsxmdy" path="res://pieces/Piece.tscn" id="1_2fx4n"]
+[ext_resource type="Script" path="res://scripts/Horse.gd" id="2_03pct"]
 
 [node name="Horse" instance=ExtResource("1_2fx4n")]
+script = ExtResource("2_03pct")
 inner_label = 3
