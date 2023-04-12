@@ -83,14 +83,12 @@ func _tile_clicked(tile: ChessTile):
 	
 	# Checks if tile has another piece
 	var pieces_in_tile = pieces.filter(func(e): return tile.position == e.position)
-	var is_a_move = not used_movement.is_capture and pieces_in_tile.is_empty()
 	var is_a_capture = used_movement.is_capture and not pieces_in_tile.is_empty() and active_piece.team != pieces_in_tile.front().team
 	
-	if is_a_move or is_a_capture:
-		active_piece.move_to(tile.position)
-		_set_active_piece(null)
-		if is_a_capture:
-			_remove_piece(pieces_in_tile.front())
+	active_piece.move_to(tile.position)
+	_set_active_piece(null)
+	if is_a_capture:
+		_remove_piece(pieces_in_tile.front())
 
 func _set_active_piece(piece: Piece):
 	active_piece = piece
