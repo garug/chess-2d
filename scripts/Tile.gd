@@ -4,6 +4,12 @@ class_name ChessTile
 
 var color
 var size
+var active = false:
+	set(value):
+		$Focus.visible = value
+		active = value
+	get:
+		return active
 signal clicked(tile)
 
 func initialize(color: Color, initial_position: Vector2, initial_size = 128):
@@ -12,6 +18,9 @@ func initialize(color: Color, initial_position: Vector2, initial_size = 128):
 	self.color = color
 	$Collision.shape.size = Vector2.ONE * initial_size
 	$Collision.position = Vector2.ONE * (initial_size / 2)
+	$Focus.apply_scale(Vector2.ONE * 0.25)
+	$Focus.set_position(Vector2.ONE * (initial_size / 2))
+	$Focus.visible = false
 	return self
 	
 func _draw():
