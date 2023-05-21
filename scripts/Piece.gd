@@ -38,7 +38,7 @@ func _on_input_event(_viewport, event, _shape_idx):
 func get_possible_tiles() -> Array[Move]:
 	return []
 	
-func get_state(pieces: Array[Piece], tiles: Array[ChessTile]):
+func get_state(_pieces: Array[Piece], _tiles: Array[ChessTile]):
 	return []
 
 # Represents a piece move

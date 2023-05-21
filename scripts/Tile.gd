@@ -12,6 +12,9 @@ var active = false:
 		return active
 signal clicked(tile)
 
+func _ready():
+	$Label.text = str(global_position)
+
 func initialize(color: Color, initial_position: Vector2, initial_size = 128):
 	self.position = initial_position * initial_size
 	self.size = initial_size

@@ -102,19 +102,17 @@ func _set_active_piece(piece: Piece):
 	active_piece = piece
 	$ActivePiece.text = str("Active Piece: ", str(piece) if piece else "None")
 	
-	# If piece is null, nothing more to do here
+	# If don't pass a piece, return function
 	if piece == null:
 		active_state = null
 		return
-		
+	
+	# Get state of board to given piece
 	active_state = piece.get_state(pieces, tiles)
 	
+	# Highlight all the possible tiles
 	for tile in active_state:
 		tile.active = true
-
-func _used_movement(piece: Piece, tile: ChessTile):
-	var filtered_possibilities = piece.get_possible_tiles().filter(func(e): return piece.position + e.position == tile.position)
-	return filtered_possibilities.front() if not filtered_possibilities.is_empty() else null
 
 func _remove_piece(piece: Piece):
 	pieces.erase(piece)

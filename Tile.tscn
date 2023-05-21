@@ -19,4 +19,8 @@ debug_color = Color(0.611765, 0.470588, 0.694118, 0.419608)
 [node name="Focus" type="Sprite2D" parent="."]
 texture = ExtResource("2_e4mvt")
 
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
